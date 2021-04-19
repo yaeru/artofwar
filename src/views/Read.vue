@@ -1,6 +1,6 @@
 <template>
 	<div id="read" class="text-center pt-5">
-		<nav>
+		<nav class="pt-5">
 			<button class="btn btn-primary" v-on:click="prevChapter">Prev chapter</button>
 			<button class="btn btn-primary ml-2" v-on:click="nextChapter">Next chapter</button>
 		</nav>

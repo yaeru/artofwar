@@ -5,11 +5,11 @@
 
 
 		
-		<Item v-if="currentItem" :item="currentItem" class="mt-4 pb-5" />
+		<Passage v-if="currentPassage" :passage="currentPassage" class="mt-4 pb-5" />
 
 		<nav class="pt-5">
-			<button class="btn btn-secondary" v-on:click="prevItem">Prev item</button>
-			<button class="btn btn-secondary ml-2" v-on:click="nextItem">Next item</button>
+			<button class="btn btn-secondary" v-on:click="prevPassage">Prev passage</button>
+			<button class="btn btn-secondary ml-2" v-on:click="nextPassage">Next passage</button>
 		</nav>
 
 		<div class="fixed-bottom p-2 p-md-5">
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-	import Item from '@/components/Item.vue'
+	import Passage from '@/components/Passage.vue'
 	export default {
 		name: 'Chapter',
 		data: function () {
 			return {
-				currentItem: null,
+				currentPassage: null,
 				progress: 0,
 			}
 		},
@@ -34,46 +34,46 @@
 			chapter: null
 		},
 		methods: {
-			nextItem() {
-				var currentIndex = this.chapter.items.indexOf(this.currentItem);
-				if (currentIndex == this.chapter.items.length - 1) {
-					// ultimo item
+			nextPassage() {
+				var currentIndex = this.chapter.passage.indexOf(this.currentPassage);
+				if (currentIndex == this.chapter.passage.length - 1) {
+					// ultimo passage
 				}
 				else {
-					this.currentItem = this.chapter.items [ currentIndex + 1 ];
+					this.currentPassage = this.chapter.passage [ currentIndex + 1 ];
 				}
 				this.progressBar();
 			},
-			prevItem() {
-				var currentIndex = this.chapter.items.indexOf(this.currentItem);
+			prevPassage() {
+				var currentIndex = this.chapter.passage.indexOf(this.currentPassage);
 				if (currentIndex == 0) {
-					// primer item
+					// primer passage
 				}
 				else {
-					this.currentItem = this.chapter.items [ currentIndex - 1 ];
+					this.currentPassage = this.chapter.passage [ currentIndex - 1 ];
 				}
 				this.progressBar();
 			},
 			progressBar() {
-				var currentIndex = this.chapter.items.indexOf(this.currentItem);
-				this.progress = (currentIndex + 1 ) / this.chapter.items.length * 100;
-				if( currentIndex == this.chapter.items.length -1 ){
+				var currentIndex = this.chapter.passage.indexOf(this.currentPassage);
+				this.progress = (currentIndex + 1 ) / this.chapter.passage.length * 100;
+				if( currentIndex == this.chapter.passage.length -1 ){
 					this.progress = 100;
 				}
 			}
 		},
 		mounted: function() {
-			this.currentItem = this.chapter.items [0];
-			//setInterval(() => this.nextItem(), 5000)
+			this.currentPassage = this.chapter.passage [0];
+			//setInterval(() => this.nextPassage(), 5000)
 		},
 		watch: {
 			chapter: function() {
-				this.currentItem = this.chapter.items [0];
+				this.currentPassage = this.chapter.passage [0];
 				this.progressBar();
 			}
 		},
 		components: {
-			Item
+			Passage
 		}
 	}
 </script>

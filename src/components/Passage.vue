@@ -1,17 +1,17 @@
 <template>
-	<div class="item">
-		<h2>{{ item.count }}</h2>
+	<div class="passage">
+		<h2>{{ passage.count }}</h2>
 		<p class="lead">
-			{{ item.body }}
+			{{ passage.body }}
 		</p>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'Item',
+		name: 'Passage',
 		props: {
-			item: null
+			passage: null
 		}
 	}
 </script>

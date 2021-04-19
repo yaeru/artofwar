@@ -3,6 +3,7 @@
 
 		<div id="nav" class="pt-3 text-center fixed-top">
 			<router-link to="/" class="btn btn-primary">Home</router-link>
+			<router-link to="/index" class="btn btn-primary ml-2">Index</router-link>
 			<router-link to="/read" class="btn btn-primary ml-2">Read</router-link>
 			<router-link to="/about" class="btn btn-primary ml-2">About</router-link>
 		</div>

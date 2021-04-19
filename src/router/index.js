@@ -4,11 +4,18 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/index',
+    name: 'Index',
+    component: () => import(/* webpackChunkName: "index" */ '../views/Index.vue')
   },
   {
     path: '/read',
@@ -20,10 +27,7 @@ const routes = [
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
-]
-
-const router = new VueRouter({
-  routes
+  ]
 })
 
 export default router
