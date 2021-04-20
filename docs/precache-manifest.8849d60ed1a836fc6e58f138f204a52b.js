@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f365103e8eab73da1a2",
+    "revision": "8b5f84b4ffe59f4ff1c4",
     "url": "/artofwar/css/app.686688fc.css"
   },
   {
-    "revision": "ebe575ba7c5fd05f17e810458738deb7",
+    "revision": "546d3ecac2c580381baabba0cbfc3ea6",
     "url": "/artofwar/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artofwar/js/about.e7763a82.js"
   },
   {
-    "revision": "3f365103e8eab73da1a2",
-    "url": "/artofwar/js/app.c5e5f8a9.js"
+    "revision": "8b5f84b4ffe59f4ff1c4",
+    "url": "/artofwar/js/app.fc9d44a3.js"
   },
   {
     "revision": "180f40350c17e363cb00",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artofwar/js/index.1d154e06.js"
   },
   {
-    "revision": "48d884930a04c88b073e",
-    "url": "/artofwar/js/read.51fb1553.js"
+    "revision": "ed10b707dfb781ea0824",
+    "url": "/artofwar/js/read.f4eb173c.js"
   },
   {
     "revision": "2bef094aee76f8d636d358e6a6e4d896",

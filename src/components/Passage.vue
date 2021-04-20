@@ -1,6 +1,6 @@
 <template>
 	<div class="passage">
-		<h2>{{ passage.count }}</h2>
+		<h3 class="h5">Passage {{ passage.count }}</h3>
 		<p class="lead">
 			{{ passage.body }}
 		</p>

@@ -2,8 +2,6 @@
 	<div class="chapter pt-5">
 		<h2 class="h5">Chapter {{ chapter.number }}</h2>
 		<h1 class="text-uppercase h3 mb-0">{{ chapter.title }}</h1>
-
-
 		
 		<Passage v-if="currentPassage" :passage="currentPassage" class="mt-4 pb-5" />
 
