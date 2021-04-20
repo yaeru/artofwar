@@ -3,9 +3,9 @@ Vuejs app to read The Art Of War by Sun Tzu.
 
 You can see a demo [here](https://yaeru.github.io/artofwar/)
 
-![Alt text](./samurai.svg)
-<img src="./samurai.svg">
-
+<p align="center">
+<img src="./samurai.svg" width="200">
+</p>
 
 ## Thanks
 - [SunTzuSaid.com](https://suntzusaid.com/)
