@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.6614a5df0d8a547736dad729e3547fa0.js"
+  "/artofwar/precache-manifest.c948a2786d38cf3094254320901ea743.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "artofwar"});
